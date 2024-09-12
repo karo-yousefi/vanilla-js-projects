@@ -51,36 +51,23 @@ body{
 	height: 33.33%;
 }
 
-.weather-icon-container *{
+#weather-code-icon{
+	display: block;
 	font-size: 6rem;
 	color: #fff;
 	transition: 0.2s;
 }
 
-.weather-icon-container *:hover{
+#weather-code-icon:hover{
 	font-size: 7rem;
 }
 
-.fa-sun:hover{
-	color: #faec26;
-}
-
-
-.fa-cloud-sun:hover{
-	color: #818181;
-}
-
-.fa-cloud-rain:hover{
-	color: #32cefd;
-}
-
-.fa-snowflake:hover{
-	color: #386dff;
-}
-
-
 .fa-cloud-bolt:hover{
 	color: #363636;
+}
+
+.hidden{
+	display: none;
 }
 
 .text-container{
@@ -107,7 +94,7 @@ body{
 
 .wind-text{
 	font-size: calc(1.3rem + 0.5vw);
-	margin-right: 5px;
+	margin-left: 7px;
 	font-weight: 300;
 	color: #434f68;
 
@@ -141,7 +128,7 @@ body{
 
 .button{
 	flex: 1;
-	font-size: 1.8rem;
+	font-size: calc(0.9rem + 0.5vw);
 	border: none;
 	text-transform: uppercase;
 	background-color: #fff;
@@ -153,17 +140,17 @@ body{
 
 .button:hover{
 	background-color: #f3f3f3;
-	font-size: 2.05rem;
+	font-size: calc(1rem + 0.6vw);
 	font-weight: 400;
 }
 
 .button:active{
-	color: #00a2ff;
+	color: #027cc4;
 	background-color: #e4e2e2;
 }
 
 .day-selected{
-	font-size: 1.9rem;
+	font-size: calc(1rem + 0.6vw);
 	font-weight: 500;
 	color: #00a2ff;
 }
