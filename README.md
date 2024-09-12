@@ -1,4 +1,4 @@
-# 3️⃣0️⃣ days, 3️⃣0️⃣ web applications
+# 3️⃣0️⃣ days, 3️⃣0️⃣ web applications (Vanilla JS)
 
 <br>
 
@@ -14,8 +14,6 @@
 > HTML <br>
 > Vanilla CSS <br>
 > Vanilla JS <br>
-> Tailwindcss <br>
-> React <br>
 
 ---
 
@@ -23,4 +21,9 @@
 >**Live Preview** will be added soon for all the projects :-)
 
 
-1. 
+1. Weather App
+> This app gets the user's latitude and longitude (if they allow it in their browser) and based on that it gets the data from [this API](https://open-meteo.com/).
+
+ <br>
+ 
+![weather-app-pic](./media/weather-app-pic.png)
