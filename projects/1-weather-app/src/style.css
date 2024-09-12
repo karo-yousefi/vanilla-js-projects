@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Outfit";
+	user-select: none;
+}
+
+body{
+	width: 100vw;
+	height: 100vh;
+	background-image: url("https://images.unsplash.com/photo-1584267385494-9fdd9a71ad75?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+	background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.cover{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffffff59;
+	width: 100%;
+	height: 100%;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: #ffffff60;
+	border: 1px solid #fff;
+	border-radius: 15px;
+	width: 35%;
+	min-width: 300px;
+	height: 50%;
+	max-height: 430px;
+	margin-bottom: 200px;
+	backdrop-filter: blur(6px);
+}
+
+.weather-icon-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 33.33%;
+}
+
+.weather-icon-container *{
+	font-size: 6rem;
+	color: #fff;
+	transition: 0.2s;
+}
+
+.weather-icon-container *:hover{
+	font-size: 7rem;
+}
+
+.fa-sun:hover{
+	color: #faec26;
+}
+
+
+.fa-cloud-sun:hover{
+	color: #818181;
+}
+
+.fa-cloud-rain:hover{
+	color: #32cefd;
+}
+
+.fa-snowflake:hover{
+	color: #386dff;
+}
+
+
+.fa-cloud-bolt:hover{
+	color: #363636;
+}
+
+.text-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 33.33%;
+	gap: 10px;
+}
+
+.temp-text{
+	font-size: calc(2.5rem + 2vw);
+	font-weight: 400;
+	color: #434f68;
+	margin-top: 15px;
+}
+
+.wind-container{
+	display: flex;
+	margin-bottom: 40px;
+}
+
+.wind-text{
+	font-size: calc(1.3rem + 0.5vw);
+	margin-right: 5px;
+	font-weight: 300;
+	color: #434f68;
+
+}
+
+.fa-wind{
+	font-size: 2rem;
+	margin: 5px;
+	color: #434f68;
+}
+
+.wind-container *{
+	display: block;
+}
+
+.days-list{
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	width: 100%;
+	height: 33.33%;
+}
+
+.days-list button:first-child{
+	border-bottom-left-radius: 15px;
+}
+
+.days-list button:last-child{
+	border-bottom-right-radius: 15px;
+}
+
+.button{
+	flex: 1;
+	font-size: 1.8rem;
+	border: none;
+	text-transform: uppercase;
+	background-color: #fff;
+	cursor: pointer;
+	transition: 0.2s;
+	color: #585858;
+	font-weight: 200;
+}
+
+.button:hover{
+	background-color: #f3f3f3;
+	font-size: 2.05rem;
+	font-weight: 400;
+}
+
+.button:active{
+	color: #00a2ff;
+	background-color: #e4e2e2;
+}
+
+.day-selected{
+	font-size: 1.9rem;
+	font-weight: 500;
+	color: #00a2ff;
+}
