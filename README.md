@@ -27,3 +27,12 @@
  <br>
  
 ![weather-app-pic](./media/weather-app-pic.png)
+
+---
+
+2. Flexbox CSS Generator
+> This app helps you understand/use flexbox css. By changing the values, The result will be visualized and you can see the exact code used for that result.
+
+![flexbox-generator](./media/flexbox-generator.png)
+
+---

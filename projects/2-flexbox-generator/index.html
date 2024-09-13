@@ -10,13 +10,13 @@
 <body>
 	<div class="container">
 		<div class="showcase-container">
-			<div class="box"></div>
-
 		</div>
 
 		<div class="selection-container">
-			<button class="generate-button">Generate</button>
-			<select name="number-of-elements" class="select" id="select-number" hidden>
+			<button class="button next">next-></button>
+			<button class="button previous"><-previous</button>
+
+			<select name="number-of-elements" class="select" id="select-number">
 				<option value="" hidden selected disabled>Number of elements</option>
 				<option value="1">1</option>
 				<option value="2">2</option>
@@ -28,50 +28,56 @@
 				<option value="8">8</option>
 				<option value="9">9</option>
 			</select>
-			<select name="direction" class="select" id="select-direction" hidden>
+
+			<select name="flex-box" class="select hidden" id="select-on-off">
+				<option value="" hidden selected disabled>flex-box</option>
+				<option value="on">on</option>
+				<option value="off">off</option>
+			</select>
+			
+			<select name="direction" class="select hidden" id="select-direction">
 				<option value="" hidden selected disabled>Direction</option>
 				<option value="row">row</option>
 				<option value="column">column</option>
 			</select>
-			<select name="wrap" class="select" id="select-wrap" hidden>
+
+			<!-- justify-content -->
+			<select name="justify-content" class="select hidden" id="select-justify">
+				<option value="" hidden selected disabled>Justify Content</option>
+				<option value="flex-start">flex-start</option>
+				<option value="center">center</option>
+				<option value="flex-end">flex-end</option>
+				<option value="space-around">space-around</option>
+				<option value="space-between">space-between</option>
+				<option value="space-evenly">space-evenly</option>
+			</select>
+
+			<!-- align-items -->
+			<select name="align-items" class="select hidden" id="select-align">
+				<option value="" hidden selected disabled>Align Items</option>
+				<option value="flex-start">flex-start</option>
+				<option value="center">center</option>
+				<option value="flex-end">flex-end</option>
+			</select>
+			
+			<input type="text" name="gap" placeholder="gap" class="select hidden" id="select-gap">
+
+			<select name="wrap" class="select  hidden" id="select-wrap">
 				<option value="" hidden selected disabled>Wrap</option>
 				<option value="no-wrap">no wrap</option>
 				<option value="wrap">wrap</option>
 			</select>
-			<select name="horizontal-row" class="select" id="select-hor-row" hidden>
-				<option value="" hidden selected disabled>Horizontal</option>
-				<option value="flex-start">flex-start</option>
-				<option value="center">center</option>
-				<option value="flex-end">flex-end</option>
-				<option value="space-around">space-around</option>
-				<option value="space-between">space-between</option>
-				<option value="space-evenly">space-evenly</option>
-			</select>
-			<select name="horizontal-column" class="select" id="select-hor-col" hidden>
-				<option value="" hidden selected disabled>Horizontal</option>
-				<option value="flex-start">flex-start</option>
-				<option value="center">center</option>
-				<option value="flex-end">flex-end</option>
-			</select>
-			<select name="vertical-row" class="select" id="select-ver-row" hidden>
-				<option value="" hidden selected disabled>Vertical</option>
-				<option value="flex-start">flex-start</option>
-				<option value="center">center</option>
-				<option value="flex-end">flex-end</option>
-			</select>
-			<select name="vertical-column" class="select" id="select-ver-col" hidden>
-				<option value="" hidden selected disabled>Vertical</option>
-				<option value="flex-start">flex-start</option>
-				<option value="center">center</option>
-				<option value="flex-end">flex-end</option>
-				<option value="space-around">space-around</option>
-				<option value="space-between">space-between</option>
-				<option value="space-evenly">space-evenly</option>
-			</select>
-			<input type="text" name="gap" placeholder="gap" class="select" id="select-gap" hidden>
 		</div>
 		<div class="code-container">
-
+			<p class="code" id="code-container-first">.container {</p>
+			<p class="code hidden" id="code-on-off">&nbsp;&nbsp;display:;</p>
+			<p class="code hidden" id="code-direction">&nbsp;&nbsp;flex-direction:;</p>
+			<p class="code hidden" id="code-justify">&nbsp;&nbsp;justify-content:;</p>
+			<p class="code hidden" id="code-align">&nbsp;&nbsp;align-items:;</p>
+			<p class="code hidden" id="code-gap">&nbsp;&nbsp;gap:;</p>
+			<p class="code hidden" id="code-wrap">&nbsp;&nbsp;flex-wrap:;</p>
+			<br>
+			<p class="code" id="code-container-last">}</p>
 		</div>
 	</div>
 	<script type="text/javascript" src="/src/script.js"></script>
