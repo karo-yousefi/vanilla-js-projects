@@ -1,15 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Site</title>
-    <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=karo.com">
-    <script src="https://kit.fontawesome.com/74563a76db.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flexbox CSS Generator</title>
+	<script src="https://kit.fontawesome.com/74563a76db.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="/src/style.css">
 </head>
 <body>
-    
-    <script type="text/javascript" src="script.js"></script>
+	<div class="container">
+		<div class="showcase-container">
+			<div class="box"></div>
+
+		</div>
+
+		<div class="selection-container">
+			<button class="generate-button">Generate</button>
+			<select name="number-of-elements" class="select" id="select-number" hidden>
+				<option value="" hidden selected disabled>Number of elements</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+			</select>
+			<select name="direction" class="select" id="select-direction" hidden>
+				<option value="" hidden selected disabled>Direction</option>
+				<option value="row">row</option>
+				<option value="column">column</option>
+			</select>
+			<select name="wrap" class="select" id="select-wrap" hidden>
+				<option value="" hidden selected disabled>Wrap</option>
+				<option value="no-wrap">no wrap</option>
+				<option value="wrap">wrap</option>
+			</select>
+			<select name="horizontal-row" class="select" id="select-hor-row" hidden>
+				<option value="" hidden selected disabled>Horizontal</option>
+				<option value="flex-start">flex-start</option>
+				<option value="center">center</option>
+				<option value="flex-end">flex-end</option>
+				<option value="space-around">space-around</option>
+				<option value="space-between">space-between</option>
+				<option value="space-evenly">space-evenly</option>
+			</select>
+			<select name="horizontal-column" class="select" id="select-hor-col" hidden>
+				<option value="" hidden selected disabled>Horizontal</option>
+				<option value="flex-start">flex-start</option>
+				<option value="center">center</option>
+				<option value="flex-end">flex-end</option>
+			</select>
+			<select name="vertical-row" class="select" id="select-ver-row" hidden>
+				<option value="" hidden selected disabled>Vertical</option>
+				<option value="flex-start">flex-start</option>
+				<option value="center">center</option>
+				<option value="flex-end">flex-end</option>
+			</select>
+			<select name="vertical-column" class="select" id="select-ver-col" hidden>
+				<option value="" hidden selected disabled>Vertical</option>
+				<option value="flex-start">flex-start</option>
+				<option value="center">center</option>
+				<option value="flex-end">flex-end</option>
+				<option value="space-around">space-around</option>
+				<option value="space-between">space-between</option>
+				<option value="space-evenly">space-evenly</option>
+			</select>
+			<input type="text" name="gap" placeholder="gap" class="select" id="select-gap" hidden>
+		</div>
+		<div class="code-container">
+
+		</div>
+	</div>
+	<script type="text/javascript" src="/src/script.js"></script>
 </body>
 </html>
