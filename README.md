@@ -38,3 +38,16 @@
 ![flexbox-generator](./media/flexbox-generator.png)
 
 ---
+
+3. Accordion Menu
+> Just a simple accordion menu <br> 
+> Key Skills: DOM Manipulation
+
+![accordion-menu](./media/accordion-menu.png)
+
+---
+
+4. Magnatic Hover Effect
+
+
+
