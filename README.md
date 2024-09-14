@@ -23,6 +23,7 @@
 
 1. Weather App
 > This app gets the user's latitude and longitude (if they allow it in their browser) and based on that it gets the data from [this API](https://open-meteo.com/).
+> Key Skill: Async operations and promises, Working with APIS
 
  <br>
  
@@ -32,6 +33,7 @@
 
 2. Flexbox CSS Generator
 > This app helps you understand/use flexbox css. By changing the values, The result will be visualized and you can see the exact code used for that result.
+> DOM Manipulation, Flexbox
 
 ![flexbox-generator](./media/flexbox-generator.png)
 
