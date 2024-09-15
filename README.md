@@ -27,7 +27,7 @@
 > This app gets the user's latitude and longitude (if they allow it in their browser) and based on that it gets the data from [this API](https://open-meteo.com/). <br>
 > Key Skills: Async operations / APIs
 
-![weather-app-pic](./media/weather-app-pic.png)
+![weather-app-pic](./media/weather-app-pic.gif)
 
 ---
 
@@ -35,7 +35,7 @@
 > This app helps you understand/use Flexbox CSS. By changing the values, The result will be visualized and you can see the exact code used for that result. <br>
 > Key Skills: DOM Manipulation / Flexbox
 
-![flexbox-generator](./media/flexbox-generator.png)
+![flexbox-generator](./media/flexbox-generator.gif)
 
 ---
 
@@ -43,7 +43,7 @@
 > Just a simple accordion menu <br> 
 > Key Skills: DOM Manipulation
 
-![accordion-menu](./media/accordion-menu.png)
+![accordion-menu](./media/accordion-menu.gif)
 
 ---
 
