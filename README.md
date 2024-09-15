@@ -47,7 +47,12 @@
 
 ---
 
-4. Magnatic Hover Effect
+4. Magnetic Hover Effect
+> A custom curosr with magnatic effect towards icons. The cursor changes its shape while hovering the icons. <br>
+> Key Skills: Working with GSAP / Working with mouse and handling its events
 
+![magnetic-hover-effect](./media/magnetic-hover-effect.gif)
 
+---
 
+5. ?
