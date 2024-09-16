@@ -17,85 +17,72 @@ const codeGap = document.querySelector("#code-gap");
 const codewrap = document.querySelector("#code-wrap");
 
 const optionsOrder = ["select-number", "select-on-off", "select-direction", "select-justify", "select-align", "select-gap", "select-wrap"];
-let selectionOptionNormal = "select-number";
-let selectionOptionColumn = "select-number";
+let selectionOption = "select-number";
 
 
-function deleteAllShowcaseElements() {
+function deleteAllShowcaseElements() { 
   childrenArray = Object.values(showcaseContainer.children);
   childrenArray.forEach((child) => {child.remove()})
 }
 
-// function addCodeLines(text){
-//   const newCode = document.createElement("p");
-//   newCode.classList.add("code");
-//   newCode.innerHTML = text;
-//   return newCode;
-// }
-
-
-// function orderCodeLines(newCodeLines){
-//   let existingLines = Array.from(codeContainer.children);
-//   allCodeLines = existingLines.concat(newCodeLines);
-//   existingLines.forEach((element) => {element.remove()});
-//   existingLines = [];
-//   allCodeLines.forEach((eleemnt) => {codeContainer.appendChild(eleemnt)});
-// }
-
 nextButton.addEventListener("click", () => {  
-  if (optionsOrder.indexOf(selectionOptionNormal) + 1 < optionsOrder.length){
+  if (optionsOrder.indexOf(selectionOption) + 1 < optionsOrder.length){ 
 
-    document.getElementById(selectionOptionNormal).classList.add("hidden");
-    const newSelection = optionsOrder[optionsOrder.indexOf(selectionOptionNormal) + 1];
-    document.getElementById(newSelection).classList.remove("hidden");
-    selectionOptionNormal = newSelection;
+    document.getElementById(selectionOption).classList.add("hidden"); // Hiding the current option selector
+    const newSelection = optionsOrder[optionsOrder.indexOf(selectionOption) + 1]; // Getting the next option selector based on the optionsOrder array
+    document.getElementById(newSelection).classList.remove("hidden"); // Showing the new current option
+    selectionOption = newSelection; // Updatng the new current option
   }
 })
 
 previousButton.addEventListener("click", () => {  
-  if (optionsOrder.indexOf(selectionOptionNormal) > 0){
+  if (optionsOrder.indexOf(selectionOption) > 0){
 
-    document.getElementById(selectionOptionNormal).classList.add("hidden");
-    const newSelection = optionsOrder[optionsOrder.indexOf(selectionOptionNormal) - 1];
-    document.getElementById(newSelection).classList.remove("hidden");
-    selectionOptionNormal = newSelection;
+    document.getElementById(selectionOption).classList.add("hidden"); // Hiding the current option selector
+    const newSelection = optionsOrder[optionsOrder.indexOf(selectionOption) - 1]; // Getting the previous option selector based on the optionsOrder array
+    document.getElementById(newSelection).classList.remove("hidden"); // Showing the new current option
+    selectionOption = newSelection; // Updatng the new current option
   }
 })
 
 selectNumber.addEventListener("input", () => {
-  deleteAllShowcaseElements();
+  deleteAllShowcaseElements(); // Clearning everything before changing the number of elements on the screen
 
-  for(let i=0; i<selectNumber.value; i++) {
-    const newBox = document.createElement("div");
-    newBox.classList.add("box");
-    showcaseContainer.appendChild(newBox);
+  for(let i=0; i<selectNumber.value; i++) { 
+    const newBox = document.createElement("div"); // Creating a new element
+    newBox.classList.add("box"); // Styling it
+    showcaseContainer.appendChild(newBox); // Adding it the the DOM
   }
 });
 
+// Changing the display to flex 
 selectOnOff.addEventListener("click", () => {
   if (selectOnOff.value==="on") {
-    showcaseContainer.style.display = "flex";
-    codeOnOff.classList.remove("hidden");
-    codeOnOff.innerHTML = "&nbsp;&nbsp;display: flex;";
+    showcaseContainer.style.display = "flex"; // Changing the display of the shocase box to flex
+    codeOnOff.classList.remove("hidden"); // Showing the display: flex text in the code box
+    codeOnOff.innerHTML = "&nbsp;&nbsp;display: flex;"; // Updating the text in the code box
   }
   else if (selectOnOff.value==="off") {
-    showcaseContainer.style.display = "block"
-    codeOnOff.classList.add("hidden");
+    showcaseContainer.style.display = "block" // Changing the display of the shocase box to block
+    codeOnOff.classList.add("hidden"); // Hiding the display: flex text in the code box
   }
 })
 
+// Changing the direction of flex
 selectDirection.addEventListener("click", () => {
   if (selectDirection.value==="row") {
-    showcaseContainer.style.flexDirection = "row";
-    codeDirection.classList.remove("hidden");
-    codeDirection.innerHTML = "&nbsp;&nbsp;flex-direction: row;";
+    showcaseContainer.style.flexDirection = "row"; // Changing the direction to rwo
+    codeDirection.classList.remove("hidden"); // Showing the flex-direction text in the code box
+    codeDirection.innerHTML = "&nbsp;&nbsp;flex-direction: row;"; // Updating the text in the code box
   }
   else if (selectDirection.value==="column") {
-    showcaseContainer.style.flexDirection = "column";
-    codeDirection.classList.remove("hidden");
-    codeDirection.innerHTML = "&nbsp;&nbsp;flex-direction: column;";
+    showcaseContainer.style.flexDirection = "column"; // Changing the direction to column
+    codeDirection.classList.remove("hidden"); // Showing the flex-direction text in the code box
+    codeDirection.innerHTML = "&nbsp;&nbsp;flex-direction: column;"; // Updating the text in the code box
   }
 });
+
+// ==== Same logic as before ====
 
 selectJustify.addEventListener("click", () => {
   if (selectJustify.value === "flex-start"){
@@ -151,7 +138,7 @@ selectAlign.addEventListener("click", () => {
 selectGap.addEventListener("input", () => {
   showcaseContainer.style.gap = selectGap.value + "px";
   codeGap.classList.remove("hidden");
-  codeGap.innerHTML = `&nbsp;&nbsp;gap: ${selectGap.value}px;`
+  codeGap.innerHTML = `&nbsp;&nbsp;gap: ${selectGap.value}px;`;
 })
 
 selectWrap.addEventListener("click", () => {
@@ -165,3 +152,5 @@ selectWrap.addEventListener("click", () => {
     codewrap.classList.add("hidden");
   }
 });
+
+// ================
