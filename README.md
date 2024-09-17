@@ -56,3 +56,7 @@
 ---
 
 5. Filter Menu
+> A simple item filter. <br>
+> Key Skills: DOM Manipulation / Logic behind filters
+
+![filter-menu](filter-menu.png)
