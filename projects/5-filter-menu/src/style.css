@@ -28,6 +28,7 @@ body{
 	border-radius: 6px;
 	position: relative;
 	overflow: hidden;
+	transition: 0.25s;
 }
 
 .menu-image{
@@ -89,9 +90,44 @@ body{
 	transition: 0.15s ease-in-out;
 }
 
+#dumbbell, #book, #wave{
+	color: #fff;
+	font-size: 1.7rem;
+	position: absolute;
+	cursor: pointer;
+	transition: 0.15s;
+}
+
+#dumbbell{
+	top: 20px;
+	left: 80px;
+	color: #61dd61;
+}
+
+#book{
+	top: 80px;
+	left: 20px;
+	color: #5ed9e9;
+}
+
+#wave{
+	top: 140px;
+	left: 80px;
+	color: #EB3743;
+}
+
 .closed{
 	scale: 0;
 }
+
+.lowerOpacity{
+	opacity: 0.8;
+}
+
+.hidden{
+	display: none;
+}
+
 
 .items{
 	margin-top: 46px;
