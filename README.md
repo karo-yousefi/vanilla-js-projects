@@ -4,7 +4,7 @@
 
 ✅ A **30-day challenge** to code every day and make something "interesting" 🌟
 
-✅ I tried to make **unique** projects rather than what you've all seen online (To-Do lists, Calculaters, etc) 💠
+✅ I tried to make **unique** projects rather than what you've all seen online (To-Do lists, Calculators, etc) 💠
 
 ✅ All the projects are **documented** 📃, Feel free to fork the code and make changes or do the **challenge yourself** 💪, Either these projects or your own ideas 
 
@@ -48,7 +48,7 @@
 ---
 
 4. Magnetic Hover Effect
-> A custom curosr with magnatic effect towards icons. The cursor changes its shape while hovering the icons. <br>
+> A custom cursor with a magnetic effect toward icons. The cursor changes its shape while hovering over the icons. <br>
 > Key Skills: Working with GSAP / Working with mouse and handling its events
 
 ![magnetic-hover-effect](./media/magnetic-hover-effect.gif)
