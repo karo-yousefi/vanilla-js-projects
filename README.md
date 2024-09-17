@@ -59,4 +59,4 @@
 > A simple item filter. <br>
 > Key Skills: DOM Manipulation / Logic behind filters
 
-![filter-menu](filter-menu.gif)
+![filter-menu](./media/filter-menu.gif)
