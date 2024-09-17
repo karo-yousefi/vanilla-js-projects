@@ -43,12 +43,12 @@
 > Just a simple accordion menu <br> 
 > Key Skills: DOM Manipulation
 
-![accordion-menu](./media/accordion-menu.gif)
+![accordion-menu](./media/media/accordion-menu.gif)
 
 ---
 
 4. Magnetic Hover Effect
-> A custom curosr with magnatic effect towards icons. The cursor changes its shape while hovering the icons. <br>
+> A custom cursor with a magnetic effect toward icons. The cursor changes its shape while hovering over the icons. <br>
 > Key Skills: Working with GSAP / Working with mouse and handling its events
 
 ![magnetic-hover-effect](./media/magnetic-hover-effect.gif)
