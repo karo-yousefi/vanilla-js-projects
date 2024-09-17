@@ -4,7 +4,7 @@
 
 ✅ A **30-day challenge** to code every day and make something "interesting" 🌟
 
-✅ I tried to make **unique** projects rather than what you've all seen online (To-Do lists, Calculaters, etc) 💠
+✅ I tried to make **unique** projects rather than what you've all seen online (To-Do lists, Calculators, etc) 💠
 
 ✅ All the projects are **documented** 📃, Feel free to fork the code and make changes or do the **challenge yourself** 💪, Either these projects or your own ideas 
 
@@ -43,7 +43,7 @@
 > Just a simple accordion menu <br> 
 > Key Skills: DOM Manipulation
 
-![accordion-menu](./media/media/accordion-menu.gif)
+![accordion-menu](./media/accordion-menu.gif)
 
 ---
 
