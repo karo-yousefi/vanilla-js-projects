@@ -60,3 +60,13 @@
 > Key Skills: DOM Manipulation / Logic behind filters
 
 ![filter-menu](./media/filter-menu.gif)
+
+---
+
+6. Encoding Mouse Hover Effect
+> When you hover the container, It generates some random letters in container and a gradient follows the mouse. <br>
+> Key Skills: Mouse events in JS, Gradients in CSS, Masks in CSS. <br>
+> Although this was a simple small project, It lead me to a rabit whole of CSS properties that I knew very little about. Also understanding mouse events better was good.
+
+![encoding-mouse-hover-effect](./media/encoding-mouse-hover-effect.gif)
+
