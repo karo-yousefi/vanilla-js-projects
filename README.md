@@ -70,3 +70,14 @@
 
 ![encoding-mouse-hover-effect](./media/encoding-mouse-hover-effect.gif)
 
+---
+
+7. Music Player
+> A simplistic music player, You can move forward/backward each track. Changing the song updates the title, artist and the cover art.
+> Key Skills: Working with audio in JS
+
+![music-player](./media/music-player.gif)
+
+---
+
+8. ?
