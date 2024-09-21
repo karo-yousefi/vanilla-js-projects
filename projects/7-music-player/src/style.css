@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+    padding: 0px;
+   font-family: "Montserrat", sans-serif;
+   user-select: none;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url();
+}
+
+.hidden{
+  display: none;
+}
+
+.music-player-container {
+  min-width: 330px;
+  height: 520px;
+  border-radius: 15px;
+  box-shadow: 10px 0px 20px #7272728e, 0px 3px 5px #7272728e;
+  position: relative;
+  overflow: visible;
+}
+
+.music-cover-container{
+  width: 85%;
+  height: 55%;
+  border-radius: 15px;
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 10px 0px 20px #7272728e, 0px 3px 5px #7272728e;
+}
+
+.music-cover{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.music-info-container{
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  top: 270px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title{
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.artist{
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.timeline-container{
+  width: 90%;
+  height: 3%;
+  position: absolute;
+  top: 350px;
+  left: 5%;
+  border: 1px solid red;
+}
+
+.timeline{
+  width: 100%;
+  height: 3px;
+  border-radius: 15px;
+  background-color: #c2c2c2;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.timeline-filled{
+  width:0%;
+  height: 3px;
+  border-radius: 15px;
+  background-color: #505050;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.timestamp-container{
+  width: 100%;
+  padding-left: 18px;
+  padding-right: 18px;
+  position: absolute;
+  top: 360px;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.time-passed, .music-length{
+  color: #505050;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.buttons-container{
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  top: 390px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.buttons-container i{
+  font-size: 2rem;
+  cursor: pointer;
+  color: #505050;
+  transition: 0.2s;
+  min-width: 25px;
+}
+
+.buttons-container i:hover{
+  color: #2e2e2e;
+}
+
+.buttons-container i:active{
+  color: #2e2e2e;
+  scale: 0.87;
+}
