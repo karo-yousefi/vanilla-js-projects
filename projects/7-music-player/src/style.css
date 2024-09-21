@@ -72,11 +72,11 @@ body{
 
 .timeline-container{
   width: 90%;
-  height: 3%;
+  height: 4%;
   position: absolute;
-  top: 350px;
+  top: 345px;
   left: 5%;
-  border: 1px solid red;
+  cursor: pointer;
 }
 
 .timeline{
@@ -85,7 +85,7 @@ body{
   border-radius: 15px;
   background-color: #c2c2c2;
   position: absolute;
-  top: 0;
+  top: 5px;
   left: 0;
 }
 
@@ -95,7 +95,7 @@ body{
   border-radius: 15px;
   background-color: #505050;
   position: absolute;
-  top: 0;
+  top: 5px;
   left: 0;
 }
 
